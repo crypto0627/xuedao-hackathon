@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
-import { CompanyDataType } from "@/types/uiTypes";
+import { CompanyDataType } from "@/src/types/uiTypes";
 
 const data: CompanyDataType[] = [
     {

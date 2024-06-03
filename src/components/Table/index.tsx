@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { TableDataType } from '@/types/uiTypes';
+import { TableDataType } from '@/src/types/uiTypes';
 
 const initialTableData: TableDataType[] = [
     {
@@ -57,41 +57,6 @@ const initialTableData: TableDataType[] = [
 
 export default function Table() {
     const [tableData, setTableData] = useState<TableDataType[]>(initialTableData);
-
-  const fetchData = async (symbol: string) => {
-    try {
-        console.log(symbol)
-      const response = await fetch(`/api/${symbol}`);
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      const data = await response.json();
-      return data;
-    } catch (error) {
-      console.error('Error fetching data:', error);
-    }
-  };
-
-  useEffect(() => {
-    const updatePrices = async () => {
-      const updatedData = await Promise.all(
-        initialTableData.map(async (item) => {
-          const data = await fetchData(item.symbol);
-          return {
-            ...item,
-            price: parseFloat(data.lastPrice),
-            change: parseFloat(data.priceChangePercent),
-          };
-        })
-      );
-      setTableData(updatedData);
-    };
-
-    updatePrices();
-    const interval = setInterval(updatePrices, 30000); // Update every 30 seconds
-
-    return () => clearInterval(interval);
-  }, []);
 
     return (
         <>

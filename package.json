@@ -1,5 +1,5 @@
 {
-  "name": "crypto",
+  "name": "web3template",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -14,7 +14,7 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@headlessui/react": "^1.7.14",
     "@heroicons/react": "^2.0.18",
-    "@rainbow-me/rainbowkit": "^2.1.1",
+    "@rainbow-me/rainbowkit": "^2.1.2",
     "@tanstack/react-query": "^5.40.0",
     "@types/node": "20.2.0",
     "@types/react": "18.2.6",
@@ -23,6 +23,7 @@
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.2",
     "next": "14.2.3",
+    "next-intl": "^3.14.1",
     "postcss": "^8",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -32,7 +33,7 @@
     "slick-carousel": "^1.8.1",
     "tailwindcss": "3.3.2",
     "typescript": "5.0.4",
-    "viem": "^2.13.2",
+    "viem": "^2.13.3",
     "wagmi": "^2.9.8"
   },
   "devDependencies": {

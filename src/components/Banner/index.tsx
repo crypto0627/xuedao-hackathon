@@ -23,7 +23,6 @@ export default function Banner() {
                             <h1 className="text-4xl lg:text-7xl font-bold mb-5 text-white md:4px md:text-start text-center">
                                 Mint Test Token <br /> ERC-20
                             </h1>
-                            <p className='text-white md:text-lg font-normal mb-10 md:text-start text-center'>Lorem Ipsum is simply dummy text of the printing and <br /> typesetting industry. Lorem Ipsum has been the industry <br /> standard dummy text ever since the 1500s</p>
                             <div className='flex align-middle justify-center md:justify-start'>
                                 <button className='text-xl font-semibold text-white py-4 px-6 lg:px-12 navbutton mr-6' onClick={()=>setIsOpen(true)}>Get Started</button>
                             </div>

@@ -30,13 +30,7 @@ export default function Drawer({ children, isOpen, setIsOpen }: DrawerProps) {
                     <header className="px-4 py-4 flex items-center justify-between">
 
                         <div className="flex flex-shrink-0 items-center">
-                            <Image
-                                className="block h-10 lg:hidden"
-                                src={'/images/Logo/logo.svg'}
-                                alt="Crypto-Logo"
-                                width={150}
-                                height={100}
-                            />
+                            <h1 className="block h-10 w-20px lg:hidden text-white font-bold text-3xl">Web3Template</h1>
                         </div>
 
                         <XMarkIcon className="hover-spin block h-6 w-6 text-white" onClick={() => {

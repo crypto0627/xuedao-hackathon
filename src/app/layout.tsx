@@ -1,6 +1,9 @@
+import React from 'react';
+import '@rainbow-me/rainbowkit/styles.css';
 import './globals.css';
 import Navbar from '../components/Navbar/index';
 import Footer from '../components/Footer/index';
+import { Providers } from './provider';
 
 export const metadata = {
   title: 'web3Template',
@@ -18,9 +21,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar />
-        {children}
-        <Footer />
+        <Providers>
+          <Navbar />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   )

@@ -4,7 +4,7 @@ import React from 'react';
 import { Bars3Icon } from '@heroicons/react/24/outline';
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
-import Image from 'next/image';
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 interface NavigationItem {
     name: string;
@@ -34,21 +34,13 @@ const Navbar = () => {
 
                             {/* LOGO */}
 
-                            <div className="flex flex-shrink-0 items-center">
-                                <Image
+                            <div className="flex flex-shrink-0 items-center text-white font-bold text-3xl">
+                                <h1
                                     className="block h-10 w-20px lg:hidden"
-                                    src={'/images/Logo/logo.svg'}
-                                    alt="Crypto-Logo"
-                                    width={200}
-                                    height={100}
-                                />
-                                <Image
+                                >Web3Template</h1>
+                                <h1
                                     className="hidden h-48px w-48px lg:block"
-                                    src={'/images/Logo/logo.svg'}
-                                    alt="Crypto-Logo"
-                                    width={200}
-                                    height={100}
-                                />
+                                >Web3Template</h1>
                             </div>
 
                             {/* LINKS */}
@@ -71,7 +63,7 @@ const Navbar = () => {
                                 </div>
 
                             </div>
-                            <button className='hidden lg:flex justify-end text-xl font-semibold py-4 px-6 lg:px-12 navbutton text-white'>Connect Wallet</button>
+                            <div className='hidden lg:flex justify-end text-xl font-semibold py-4 px-6 lg:px-12 text-white'><ConnectButton/></div>
                             {/* <Contactusform /> */}
                         </div>
 
