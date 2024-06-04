@@ -33,11 +33,11 @@ export default function MintToken({ show, handleClose }: MintTokenProps) {
 
     useEffect(() => {
         refetchSepoliaBalance
-    }, [SepoliaBalanceData])
+    }, [SepoliaBalanceData, refetchSepoliaBalance])
 
     useEffect(() => {
         refetchXUEDAOTESTBalance
-    }, [XUEDAOTESTBalanceData])
+    }, [XUEDAOTESTBalanceData, refetchXUEDAOTESTBalance])
 
     if (isConnected) {
         return (
@@ -125,7 +125,7 @@ export function MintButton({ amount }: MintButtonProps) {
           alert(`Error: ${(error as BaseError).shortMessage || error.message}`)
         }
       }
-    }, [isClick, isConfirming, isConfirmed, error]);  
+    }, [isClick, isConfirming, isConfirmed, error, amount, hash]);  
 
     return (
  <div className="relative">
