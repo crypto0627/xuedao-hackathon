@@ -26,3 +26,8 @@ export interface FetchTickerErrorType {
     code: number,
     msg: string
 }
+
+export interface MintTokenProps {
+    show: boolean;
+    handleClose: () => void;
+}

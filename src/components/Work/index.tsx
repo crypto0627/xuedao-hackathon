@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image';
 
-interface workdata {
+type workdata = {
     imgSrc: string;
     heading: string;
     subheading: string;

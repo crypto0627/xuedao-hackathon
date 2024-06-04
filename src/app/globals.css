@@ -517,3 +517,24 @@ th:last-child {
   outline: none;
   box-shadow: 0 0 10px #ff00cc, 0 0 20px #ff00cc, 0 0 40px #ff00cc;
 }
+
+/* Loading style */
+.spinner {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #474bff;
+  -webkit-mask: radial-gradient(
+    circle closest-side at 50% 40%,
+    #0000 94%,
+    #000
+  );
+  transform-origin: 50% 40%;
+  animation: spinner-pl92zb 1s infinite linear;
+}
+
+@keyframes spinner-pl92zb {
+  100% {
+    transform: rotate(1turn);
+  }
+}

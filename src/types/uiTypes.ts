@@ -10,3 +10,7 @@ export type TableDataType = {
 export type CompanyDataType = {
     imgSrc: string;
 }
+
+export type MintButtonProps = {
+    amount: number;
+  }
