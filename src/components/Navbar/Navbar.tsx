@@ -13,7 +13,7 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-    { name: 'Home', href: '#home-section', current: false },
+    { name: 'Home', href: '/', current: false },
     { name: 'NFT-Collection', href: '/nft-collection', current: false },
 ]
 

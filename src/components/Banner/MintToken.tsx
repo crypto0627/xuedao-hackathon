@@ -50,8 +50,8 @@ export default function MintToken({ show, handleClose }: MintTokenProps) {
                                 <div className="flex flex-col justify-center p-4 sm:p-10 w-full gap-3">
                                     <div className="grid grid-cols-1 sm:grid-cols-2 text-white gap-2 sm:gap-3">
                                         <p>Current Chain: {chain?.name}</p>
-                                        <p>Sepolia Faucet: {SepoliaBalanceData?.toString()} {SepoliaBalanceData?.symbol}</p>
-                                        <p>Test Token Balance: {XUEDAOTESTBalanceData?.formatted} {XUEDAOTESTBalanceData?.symbol}</p>
+                                        <p>Sepolia Faucet: {SepoliaBalanceData?.formatted} {SepoliaBalanceData?.symbol}</p>
+                                        <p>Test Token Balance: {XUEDAOTESTBalanceData?.value.toString()} {XUEDAOTESTBalanceData?.symbol}</p>
                                     </div>
                                     <br />
                                     <div className="grid grid-cols-1 sm:grid-cols-3 items-center gap-2 sm:gap-3">
