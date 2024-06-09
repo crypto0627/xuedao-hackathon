@@ -5,12 +5,7 @@ import { Bars3Icon } from '@heroicons/react/24/outline';
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
 import { ConnectButton } from '@rainbow-me/rainbowkit';
-
-interface NavigationItem {
-    name: string;
-    href: string;
-    current: boolean;
-}
+import { NavigationItem } from '@/src/types/uiTypes';
 
 const navigation: NavigationItem[] = [
     { name: 'Home', href: '/', current: false },
@@ -21,7 +16,7 @@ function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
 }
 
-const Navbar = () => {
+export default function Navbar() {
 
     const [isOpen, setIsOpen] = React.useState(false);
 
@@ -88,5 +83,3 @@ const Navbar = () => {
         </Disclosure>
     )
 }
-
-export default Navbar;

@@ -1,15 +1,10 @@
 import React from "react";
 import Link from "next/link";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
-
-interface NavigationItem {
-    name: string;
-    href: string;
-    current: boolean;
-}
+import { NavigationItem } from "@/src/types/uiTypes";
 
 const navigation: NavigationItem[] = [
-    { name: 'Home', href: '#home-section', current: false },
+    { name: 'Home', href: '/', current: false },
     { name: 'NFT-Collection', href: '/nft-collection', current: false },
 ]
 

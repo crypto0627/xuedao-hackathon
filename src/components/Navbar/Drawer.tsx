@@ -1,12 +1,6 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import { XMarkIcon } from '@heroicons/react/24/outline'
-import Image from "next/image";
-
-interface DrawerProps {
-    children: ReactNode;
-    isOpen: boolean;
-    setIsOpen: (isOpen: boolean) => void;
-}
+import { DrawerProps } from "@/src/interfaces/api-interfaces";
 
 export default function Drawer({ children, isOpen, setIsOpen }: DrawerProps) {
 

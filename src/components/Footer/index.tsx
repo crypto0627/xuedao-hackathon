@@ -37,14 +37,8 @@ const footer = () => {
         <div className="mt-24 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
 
           <div className='col-span-6'>
-            <Image
-              className="block h-12 w-20px mb-4"
-              src={'/images/Logo/logo.svg'}
-              alt="Crypto-Logo"
-              width={200}
-              height={100}
-            />
-            <h3 className='text-lightblue text-sm font-normal leading-9 mb-4 lg:mb-16'> Cryptocurrency is a type of virtual currency that uses cryptography to secure transactions that are digitally recorded on a distributed ledger, such as a blockchain.</h3>
+          <h1 className="text-white text-3xl font-bold">Web3Template</h1>
+            <h3 className='text-lightblue text-sm font-normal leading-9 mb-4 lg:mb-16'> XueDAO is the very first community in Taiwan focused on Student Developers led by Students!</h3>
             <div className='flex gap-4'>
               {socialLinks.map((items, i) => (
                 <Link href={items.href} key={i}><Image src={items.imgsrc} alt={items.imgsrc} className='footer-icons' width={50} height={50} /></Link>
